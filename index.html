@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Weather App</h1>
+        <p>Check the current weather and forecast for your city!</p>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search">
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="search" 
+                placeholder="Enter city name" 
+                aria-label="City name">
+            <button id="search-button">Search</button>
+        </div>
+        <p id="error-message"></p>
+    </section>
+
+    <!-- Current Weather Display Section -->
+    <section class="display">
+        <div class="weather-display">
+            <h2 id="city-name">City Name</h2>
+            <img id="weather-icon" alt="Weather Icon">
+            <p id="condition">Weather Condition</p>
+            <p id="temperature">Temperature: --°C</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind-speed">Wind Speed: -- km/h</p>
+        </div>
+    </section>
+
+    <!-- Forecast Section -->
+    <section class="forecast">
+        <div class="forecast-section">
+            <div class="forecast-item" id="forecast-day-1">
+                <h2>Day 1</h2>
+                <img src="#" alt="Weather Icon" id="forecast-icon-1">
+                <p id="forecast-temp-1">--°C</p>
+            </div>
+            <div class="forecast-item" id="forecast-day-2">
+                <h2>Day 2</h2>
+                <img src="#" alt="Weather Icon" id="forecast-icon-2">
+                <p id="forecast-temp-2">--°C</p>
+            </div>
+            <div class="forecast-item" id="forecast-day-3">
+                <h2>Day 3</h2>
+                <img src="#" alt="Weather Icon" id="forecast-icon-3">
+                <p id="forecast-temp-3">--°C</p>
+            </div>
+            <div class="forecast-item" id="forecast-day-4">
+                <h2>Day 4</h2>
+                <img src="#" alt="Weather Icon" id="forecast-icon-4">
+                <p id="forecast-temp-4">--°C</p>
+            </div>
+            <div class="forecast-item" id="forecast-day-5">
+                <h2>Day 5</h2>
+                <img src="#" alt="Weather Icon" id="forecast-icon-5">
+                <p id="forecast-temp-5">--°C</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Source: OpenWeatherMap</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
